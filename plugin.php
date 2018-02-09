@@ -7,7 +7,7 @@
  * Author URI: https://github.com/alexsancho
  * License: MIT
  * License URI: https://opensource.org/licenses/MIT
- * Version: 1.2
+ * Version: 1.0.0
  */
 
 namespace Asancho;
