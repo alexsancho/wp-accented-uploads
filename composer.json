@@ -1,0 +1,22 @@
+{
+  "name": "alexsancho/wp-accented-uploads",
+  "type": "wordpress-muplugin",
+  "license": "MIT",
+  "description": "Replaces accents from future uploads and has wp-cli command which you can use to sanitize current content.",
+  "homepage": "http://alexsancho.name",
+  "authors": [
+    {
+      "name": "Alex Sancho",
+      "email": "alex@alexsancho.name",
+      "homepage": "https://github.com/alexsancho"
+    }
+  ],
+  "keywords": [
+    "wordpress", "wp","accents","sanitize","escape","urls","uploads"
+  ],
+  "require": {
+    "php": ">=5.6",
+    "roave/security-advisories": "dev-master",
+    "composer/installers": ">=v1.0.12"
+  }
+}
