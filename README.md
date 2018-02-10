@@ -1,4 +1,5 @@
 # WP Plugin: Sanitize Accented Uploads
+[![Build Status](https://travis-ci.org/alexsancho/wp-accented-uploads.svg?branch=master)](https://travis-ci.org/alexsancho/wp-accented-uploads)
 
 WordPress plugin which removes accented characters like `åöä` from future uploads and has easy wp-cli command for removing accents from current uploads and attachment links from database.
 This helps tremendously with current and future migrations of your site and helps you to avoid strange filename encoding bugs. It also turns spaces into dashes `' ' => '-'` and removes any other special characters like `™ ¼` so that they don't bother you anymore.
