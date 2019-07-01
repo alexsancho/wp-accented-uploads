@@ -48,7 +48,7 @@ if ( ! class_exists( __NAMESPACE__ . '\\Sanitizer' ) ) {
          *
          * @return string
          */
-        public static function sanitize_filenames_on_upload( $filename ) : string {
+        public static function sanitize_filenames_on_upload( $filename ) {
 
             // Remove accents and filename to lowercase for better urls
             // Don't sanitize file here because wordpress does this automatically
@@ -116,7 +116,7 @@ if ( ! class_exists( __NAMESPACE__ . '\\Sanitizer' ) ) {
          *
          * @return string Return the name of the file which could be found
          */
-        public static function rename_accented_files_in_any_form( $old_file, $new_file ) : string {
+        public static function rename_accented_files_in_any_form( $old_file, $new_file ) {
             // Try to move the file without any hacks before continuing
             $result = @rename( $old_file, $new_file );
 
@@ -164,7 +164,7 @@ if ( ! class_exists( __NAMESPACE__ . '\\Sanitizer' ) ) {
          *
          * @return array List of possible fixes for encoding errors
          */
-        public static function get_encoding_fix_list() : array {
+        public static function get_encoding_fix_list() {
 
             /**
              * List of possible fixes for encoding errors
@@ -312,7 +312,7 @@ if ( ! class_exists( __NAMESPACE__ . '\\Sanitizer' ) ) {
          *
          * @return string - filename with encoding errors
          */
-        public static function replace_filename_with_encoding_errors( $filename ) : string {
+        public static function replace_filename_with_encoding_errors( $filename ) {
 
             // Get associative array of fixes
             $fix_list = self::get_encoding_fix_list();
